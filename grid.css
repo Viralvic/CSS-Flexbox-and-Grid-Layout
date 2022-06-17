@@ -1,0 +1,48 @@
+/* CSS Grid */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0a0923;
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+main {
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e';
+    gap: 15px;
+    width: 50%;
+    margin: auto;
+}
+
+.box-a {
+    background-color: #fbefcc;
+    grid-area: a;
+    padding: 6em 1em;
+}
+.box-b {
+    background-color: #f9ccac;
+    grid-area: b;
+    padding: 6em 1em;
+}
+.box-c {
+    background-color: #f4a688;
+    grid-area: c;
+    padding: 3em 1em;
+}
+.box-d {
+    background-color: #f9d5e5;
+    grid-area: d;
+    padding: 3em 1em;
+} 
+.box-e {
+    background-color: #f9d5e5;
+    grid-area: e;
+    padding: 4em 1em;
+}
